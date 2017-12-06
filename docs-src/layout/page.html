@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="text/css" rel="stylesheet" href="/static/css/docs/style.css" />
+  <link type="text/css" rel="stylesheet" href="/static/css/docs/pilcrow.css" />
+  <link type="text/css" rel="stylesheet" href="/static/css/docs/hljs-github.min.css"/>
+</head>
+<body>
+  <header>
+    <a class="logo" href="/">
+      <img class="type" src="https://s1.ssl.qhres.com/static/5a791031c2c0cb0a.svg" alt="Parcel">
+    </a>
+    <div class="links">
+      <a href="https://github.com/Chimeejs" target="_blank">Github</a>
+    </div>
+  </header>
+  <div class="content">
+    <nav>
+      {{{navs_helper}}}
+    </nav>
+    <main>
+      {{> toc}}
+      {{~> content}}
+    </main>
+  </div>
+
+  <script src="https://s.ssl.qhres.com/static/af3c1d4b462cc178/jquery.js" ></script>
+  <script>
+    (function () {
+      // 在左侧导航中找到当前页，高亮之
+      var $navs = $('nav a').click(function(){
+        var $next = $(this).next();
+        if($next.hasClass('nav-list')){
+          $next.toggle();
+          return false;
+        }
+      });
+      var $activeNav = $navs.filter(function () {
+        return window.location.href.toLocaleLowerCase().indexOf(this.href.toLocaleLowerCase()) !== -1;
+      })
+      if(!$activeNav.length) return;
+      $activeNav.addClass('selected');
+
+      // 如果有内容索引，则放到左侧导航中、替换原有导航
+      var $toc = $('main .nav');
+      console.log($toc.find('li').length);
+      if(!$toc.length || $toc.find('li').length<2) return;
+      $toc.find('a').each(function(){
+        var $el = $(this);
+        $el.text($el.text().replace(/^\\/,''))
+      })
+      $activeNav.parent().append($toc);
+
+    })();
+  </script>
+</body>
+</html>

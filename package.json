@@ -1,0 +1,25 @@
+{
+  "name": "chimee-docs",
+  "version": "1.0.0",
+  "description": "The parcel website",
+  "main": "index.js",
+  "repository": "https://github.com/Chimeejs",
+  "author": "chimee",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm-run-all clean rm-mds sync-docs build:* start",
+    "rm-mds": "rm -f docs-src/docs/*",
+    "clean": "rm -rf docs",
+    "build:docs": "generate-md --layout ./docs-src/layout --input docs-src/docs/ --output docs/",
+    "sync-docs": "node docs-src/tools/sync-docs.js",
+    "rebuild": "npm-run-all clean build:* start",
+    "start": "serve ./"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^6.3.1",
+    "colors": "^1.1.2",
+    "markdown-styles": "^3.1.10",
+    "npm-run-all": "^4.1.1"
+  }
+}
