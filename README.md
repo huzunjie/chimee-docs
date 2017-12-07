@@ -1,5 +1,5 @@
 # 文档聚合工具
-用于按照`docs-src/config.js`中的配置，拉取GitHub中相应的`*.md`文档，放置到`docs-src/docs`目录，最终生成文档及导航到`docs`目录。
+用于按照`docs-src/config.js`中的配置，拉取GitHub中相应的`*.md`文档，放置到`docs-src/docs`目录，最终生成文档及导航对应的HTML页面到`docs`目录。
 
 在这里以[Chimee播放器文档](http://chimee.org/docs)聚合作为实现示例。
 
