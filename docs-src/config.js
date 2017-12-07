@@ -65,7 +65,7 @@ module.exports = {
         'md_fname': 'chimee_plugin_popup',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-plugin-popup/master/README.md'
       },
-      '👆手势操作':{
+      '👆&nbsp; 手势操作':{
         'md_fname': 'chimee_plugin_gesture',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-plugin-gesture/master/README.md'
       },
