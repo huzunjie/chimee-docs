@@ -5,9 +5,13 @@ module.exports = {
         'md_fname': 'index',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-player/master/doc/about.md'
       },
-      '📦&nbsp; 快速上手':{
+      '📦&nbsp; 快速上手(PC)':{
         'md_fname': 'chimee_player',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-player/master/README.md'
+      },
+      '📦&nbsp; 快速上手(Mobile)':{
+        'md_fname': 'chimee_mobile_player',
+        'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-mobile-player/master/README.md'
       }
     }
   },
@@ -32,10 +36,6 @@ module.exports = {
       '📚&nbsp; 实现一个popup插件':{
         'md_fname': 'how_to_write_a_popup_plugin',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee/master/doc/zh-cn/how-to-write-a-popup-plugin.md'
-      },
-      '🎁&nbsp; 为何说Chimee是组件化框架':{
-        'md_fname': 'why_chimee_is_a_frame',
-        'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee/master/doc/zh-cn/why-chimee-is-a-frame.md'
       }
     }
   },
@@ -96,6 +96,22 @@ module.exports = {
       '🎬&nbsp; MP4':{
         'md_fname': 'chimee_kernel_mp4',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-kernel-mp4/master/readme.md'
+      }
+    }
+  },
+  '扩展阅读': {
+    'childs':{
+      '🎁&nbsp; 移动端播放器插件开发':{
+        'md_fname': 'chimee_mobile_plugin_dev',
+        'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-mobile-player/master/doc/dev.md'
+      },
+      '🎁&nbsp; 为何说Chimee是组件化框架':{
+        'md_fname': 'why_chimee_is_a_frame',
+        'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee/master/doc/zh-cn/why-chimee-is-a-frame.md'
+      },
+      '🎁&nbsp; H5-Video 能做的事&存在的坑':{
+        'md_fname': 'chimee_player_preface',
+        'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-player/master/doc/preface.md'
       }
     }
   }
