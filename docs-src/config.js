@@ -1,3 +1,4 @@
+// 🚰📓📒⛓
 module.exports = {
   '总览': {
     'childs':{
@@ -5,11 +6,19 @@ module.exports = {
         'md_fname': 'index',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-player/master/doc/about.md'
       },
-      '📦&nbsp; 快速上手(PC)':{
+      '🚀&nbsp; 快速开始':{
+        'md_fname': 'start',
+        'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-player/master/doc/start.md'
+      }
+    }
+  },
+  '快捷接入': {
+    'childs':{
+      '🖥&nbsp; PC 端':{
         'md_fname': 'chimee_player',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-player/master/README.md'
       },
-      '📦&nbsp; 快速上手(Mobile)':{
+      '📱&nbsp; 移动端':{
         'md_fname': 'chimee_mobile_player',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-mobile-player/master/README.md'
       }
@@ -21,7 +30,7 @@ module.exports = {
         'md_fname': 'chimee_readme',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee/master/doc/zh-cn/README.md'
       },
-      '🚀&nbsp; Chimee API 介绍':{
+      '🛎&nbsp; Chimee API 介绍':{
         'md_fname': 'chimee_api',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee/master/doc/zh-cn/chimee-api.md'
       },
@@ -57,7 +66,7 @@ module.exports = {
         'md_fname': 'chimee_plugin_contextmenu',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-plugin-contextmenu/master/README.md'
       },
-      '📈&nbsp; 日志':{
+      '📡&nbsp; 日志':{
         'md_fname': 'chimee_plugin_log',
         'md_url': 'https://raw.githubusercontent.com/Chimeejs/chimee-plugin-log/master/README.md'
       },

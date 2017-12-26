@@ -151,17 +151,25 @@ line-height:1em;
 font-family: "Gill Sans", "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h4,h5,h6{ font-weight: bold; }
-h1{ font-size:3.2em; }
-h2{ font-size:2em; }
-h3{ font-size:1.5em; }
-h4{ font-size:1.2em; }
-h5{ font-size:1em; }
-h6{ font-size:0.9em; }
+h1{ font-size:2em; }
+h2{ font-size:1.5em; }
+h3{ font-size:1.2em; }
+h4{ font-size:1em; }
+h5{ font-size:0.9em; }
+h6{ font-size:0.7em; }
+main h1,main h2{
+  border-bottom: dashed 1px #00000030;
+  margin: 2rem 0 .5rem 0;
+  padding-bottom: .5rem;
+}
+main :target {
+  padding-top: 4rem;
+}
 
 blockquote{
 color:#666666;
 margin:0;
-padding-left: 3em;
+padding-left: 2em;
 border-left: 0.5em #EEE solid;
 }
 hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
@@ -192,10 +200,25 @@ ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
 li p:last-child { margin:0 }
 dd { margin: 0 0 0 2em; }
 
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+img { 
+  -ms-interpolation-mode: bicubic; vertical-align: middle; 
+}
+main img[src$='png'], main img[src$='gif'], main img[src$='jpg']{
+  border-radius: 0.3em;
+  box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
+  box-sizing: border-box;
+  border: #fff 0.5em solid;
+}
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
+th {
+    background: #f1f1f1;
+}
+th, td {
+    border: solid 1px #ddd;
+    padding: 5px;
+}
 
 @media only screen and (max-width: 952px) {
   .content {
@@ -220,7 +243,7 @@ td { vertical-align: top; }
 
   nav ul {
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     flex-wrap: wrap;
     max-width: 42em;
     margin: 1em auto;

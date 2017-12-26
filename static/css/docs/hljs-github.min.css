@@ -11,6 +11,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: #333;
   background: #f8f8f8;
   -webkit-text-size-adjust: none;
+  border: solid 1px #00000012;
+  border-radius: .2rem;
 }
 
 .hljs-comment,
