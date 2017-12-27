@@ -123,7 +123,7 @@ nav h3 {
 
 main {
   flex: 1;
-  max-width: 42em;
+  max-width: 46em;
   margin: 0 auto;
 }
 
@@ -151,14 +151,14 @@ line-height:1em;
 font-family: "Gill Sans", "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h4,h5,h6{ font-weight: bold; }
-h1{ font-size:2em; }
-h2{ font-size:1.5em; }
-h3{ font-size:1.2em; }
-h4{ font-size:1em; }
-h5{ font-size:0.9em; }
-h6{ font-size:0.7em; }
+h1{ font-size:2.2em; }
+h2{ font-size:1.8em; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.8em; }
 main h1,main h2{
-  border-bottom: dashed 1px #00000030;
+  border-bottom: dashed 1px #0000001c;
   margin: 2rem 0 .5rem 0;
   padding-bottom: .5rem;
 }
